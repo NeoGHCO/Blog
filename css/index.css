@@ -410,3 +410,17 @@ section{
     border-radius: 35px;
     box-shadow: 5px 5px 15px gray;
 }
+
+/* ghco tag */
+
+.fullname{
+    color: var(--bg-color);
+    background: var(--container-color);
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.Name{
+    color: var(--second-color);
+}
