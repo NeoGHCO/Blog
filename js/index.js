@@ -20,3 +20,24 @@ $(document).ready(function(){
         $(this).addClass("active-filter").siblings().removeClass("active-filter");
     });
 });
+
+$(document).ready(function(){
+    $(".filter-button").click(function(){
+        const value = $(this).attr("data-filter");
+        if (value == "all") {
+            $(".form-box").show("1000");
+        }
+        else {
+            $(".form-box")
+                .not("." + value)
+                .hide("1000");
+            $(".form-box")
+                .filter("." + value)
+                .show("1000");
+        }
+    });
+    // Add active to btn
+    $(".filter-button").click(function(){
+        $(this).addClass("active-filter").siblings().removeClass("active-filter");
+    });
+});
