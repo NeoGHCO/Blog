@@ -398,3 +398,15 @@ section{
         width: 100%;
     }
 }
+
+/* beta tag */
+
+.beta{
+    background: gray;
+    padding: 3px 10px;
+    font-size: 1rem;
+    color: black !important;
+    position: absolute;
+    border-radius: 35px;
+    box-shadow: 5px 5px 15px gray;
+}
