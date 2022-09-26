@@ -17,7 +17,7 @@
 
     <script>
         window.addEventListener("load", function (e) {
-            swal('Advertencia!!!', 'La funcion de NewsLetter todavia no esta disponible, estamos trabajando muy duro por darle el mejor contenido lo antes posible, por su comprencion, gracias', 'warning')
+            swal('Advertencia!!!', 'La funcion de NewsLetter todavia no esta disponible debido a limitaciones de nuestro sitio y equipo, estamos trabajando muy duro por darle el mejor contenido lo antes posible, por su comprencion, gracias', 'warning')
         })
     </script>
 
@@ -52,18 +52,18 @@
                             <p>
 
                                 Correo:<br>
-                                <input type="email" class="input-field" placeholder="Correo" required>
+                                <input type="email" class="input-field" placeholder="Correo" required readonly>
 
                             </p>
                         
                             <p>
 
                                 Nombre de usuario:<br>
-                                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                                <input type="text" class="input-field" placeholder="Nombre de Usuario" required readonly>
 
                             </p>
 
-                            <button type="submit" class="submit-btn">Suscribirse</button>                        
+                            <button type="submit" class="submit-btn" disabled>Suscribirse</button>                        
                         
                         </form>
                     </div>
