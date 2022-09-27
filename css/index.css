@@ -69,6 +69,8 @@
 /* Header */
 
 header{
+    padding-left: 10%;
+    padding-right: 10%;
     position: fixed;
     top: 0;
     left: 0;
@@ -185,6 +187,7 @@ header{
 .post{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    width: 80%;
     justify-content: center;
     gap: 1.5rem;
 }
@@ -282,6 +285,7 @@ section{
 /* =========== Footer =========== */
 
 .footer{
+    background: linear-gradient(0deg, #1a1e21, #81909c80, #ffffff00);
     left: 0;
     right: 0;
     bottom: 0;
@@ -289,7 +293,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding: 30px 10%;
 }
 
 .footer p{
@@ -328,7 +332,7 @@ section{
 .post-container{
     max-width: 800px;
     margin: auto;
-    width: 100%;
+    width: 80%;
 }
 
 .header-content{
@@ -395,34 +399,7 @@ section{
 
 /* =========== Responsive =========== */
 
-@media (max-width: 1060px) {
-    .container{
-        margin: 0 auto;
-        width: 95%;
-    }
-    .home-text{
-        width: 100%;
-    }
-}
-@media (max-width: 800px) {
-    .nav{
-        padding: 14px 0;
-    }
-    .home-text{
-        margin: 0 auto;
-        width: 95%;
-    }
-}
 @media (max-width: 768px) {
-    .nav{
-        padding: 10px 0;
-    }
-    section{
-        padding: 2rem 0;
-    }
-    .header-content{
-        margin-top: 3rem !important;
-    }
     .home{
         min-height: 380px;
     }
@@ -435,17 +412,13 @@ section{
     .post-header{
         height: 435px;
     }
-    .post-content{
-        margin-top: 9rem !important;
-    }
 }
-@media (max-width: 1060px) {
-    .container{
-        margin: 0 auto;
-        width: 95%;
+@media (max-width: 425px) {
+    .beta{
+        display: none;
     }
-    .home-text{
-        width: 100%;
+    .footer{
+        position: relative;
     }
 }
 
