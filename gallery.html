@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoGHCO | Blog</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+    <!--  - -  normalize.css  - -  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--  - -  Link to css  - -  -->
+    <link rel="stylesheet" href="css/index.css">
+    <!--  - -  SweetAlerts  - -  -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+
+    <!--  - -  ==========================  Pagina  ==========================  - -  -->
+
+    <!--  - -  Header  - -  -->
+    
+    <header>
+        
+        <!--  - -  Nav  - -  -->
+        <div class="nav container">
+            <!--  - -  Logo  - -  -->
+            <a href="https://neoghco.github.io/Blog/" class="logo">Neo<span>GHCO</span></a>
+            <!--  - -  Login Btn  - -  -->
+            <a href="form.html" class="login">Suscribe</a>
+        </div>
+
+    </header>
+
+    <!--  - -  Home  - -  -->
+
+    <section class="home" id="home">
+        <div class="home-text container">
+            <!--  - -  Back To Home  - -  -->
+            <a href="https://neoghco.github.io/Blog/val.html" class="back-home">Ir a la dedicatoria</a>
+            <h2 class="home-title">Te amo <span>Valeria</span></h2>
+            <span class="home-subtitle" id="splasheszone"></span>
+            <script>
+                window.addEventListener("load", function(event) {
+                    console.log("Todos los recursos terminaron de cargar!");
+
+                    var splashes = [
+                        "Hace falta que te diga que me muero por tener algo contigo?",
+                        "Hecho con amor <3",
+                        "Si mi cuerpo fuese lienzo, y mi corazon tintero, con la sangre de mis venas te escribiria un <span>te quiero</span>",
+                        "Te amo mas que a nada en este mundo corazon!",
+                        "Quisiera ser un gatito naranja para que me puedas adoptar ;-;",
+                        "Tus papis si le hecharon ganas haciendote >:3",
+                        "Quiero que seamos felices y que la gente nos tenga envidia :'D",
+                        "Quisiera que el tiempo se congelara cuando estoy contigo",
+                        "Regalame tu corazon",
+                        "Te quiero aqui, conmigo",
+                        "Hoy amanecí un poquito cursi",
+                        "Hablame, necesito atencion :'(",
+                        "El brillo de tus ojos no tiene comparacion",
+                        "Ya te dije que te amo?",
+                        "Besame, besame mucho",
+                        "no sabia que podia querer tanto a alguien, no hasta que te conoci",
+                        "Eventualmente seremos mayores y no habra problema por la edad :D",
+                        "Tengo fe en esta relacion",
+                        "Eres suficiente y mucho mas de lo que puedo pedir"
+                    ]
+
+                    document.querySelector('#splasheszone').innerHTML = splashes[Math.floor(Math.random() * splashes.length)]
+                });
+            </script>
+        </div>
+    </section>
+
+    <!--  - -  Post Filter  - -  -->
+
+    <div class="post-filter container-postfilter">
+        <span class="filter-item active-filter" data-filter='all'>Todos</span>
+        <span class="filter-item" data-filter='us'>Nosotros</span>
+        <span class="filter-item" data-filter='usdraws'>Dibujos de nosotros</span>
+        <span class="filter-item" data-filter='draws'>Dibujos</span>
+        <span class="filter-item" data-filter='you'>Tu</span>
+        <span class="filter-item" data-filter='me'>Yo</span>
+    </div>
+
+    <!--  - -  Posts  - -  -->
+
+    <section class="post container">
+
+        <div class="post-box other">
+            <img src="fotos/japijapi.jpg" alt="" class="post-img">
+        </div>
+        <div class="post-box other">
+            <img src="fotos/loviu.jpg" alt="" class="post-img">
+        </div>
+        <div class="post-box other">
+            <img src="fotos/pati.jpg" alt="" class="post-img">
+        </div>
+
+        <div class="post-box us">
+            <img src="fotos/us/1.jpg" alt="" class="post-img">
+        </div>
+        <div class="post-box us">
+            <img src="fotos/us/2.jpg" alt="" class="post-img">
+        </div>
+        <div class="post-box us">
+            <img src="fotos/us/3.jpg" alt="" class="post-img">
+        </div>
+        <div class="post-box us">
+            <img src="fotos/us/4.jpg" alt="" class="post-img">
+        </div>
+        <div class="post-box us">
+            <img src="fotos/us/5.jpg" alt="" class="post-img">
+        </div>
+        <div class="post-box us">
+            <img src="fotos/us/6.jpg" alt="" class="post-img">
+        </div>
+        <div class="post-box us">
+            <img src="fotos/us/7.jpg" alt="" class="post-img">
+        </div>
+
+        <div class="post-box usdraws">
+            <img src="fotos/dibujosus/1.png" alt="" class="post-img">
+        </div>
+        <div class="post-box usdraws">
+            <img src="fotos/dibujosus/2.jpg" alt="" class="post-img">
+        </div>
+        <div class="post-box usdraws">
+            <img src="fotos/dibujosus/3.jpg" alt="" class="post-img">
+        </div>
+        
+        <div class="post-box you">
+            <img src="fotos/you/tu1.jpg" alt="" class="post-img">
+        </div>
+        <div class="post-box you">
+            <img src="fotos/you/tu2.jpg" alt="" class="post-img">
+        </div>
+
+        <div class="post-box me">
+            <img src="fotos/me/yo1.jpg" alt="" class="post-img">
+        </div>
+        <div class="post-box me">
+            <img src="fotos/me/yo2.jpg" alt="" class="post-img">
+        </div>
+        <div class="post-box me">
+            <img src="fotos/me/yo3.jpg" alt="" class="post-img">
+        </div>
+
+        <div class="post-box draws">
+            <video autoplay loop src="fotos/dibujos/1.mp4" alt="" class="post-img">
+        </div>
+        <div class="post-box draws">
+            <video autoplay loop src="fotos/dibujos/2.mp4" alt="" class="post-img">
+        </div>
+        <div class="post-box draws">
+            <video autoplay loop src="fotos/dibujos/3.mp4" alt="" class="post-img">
+        </div>
+        <div class="post-box draws">
+            <video autoplay loop src="fotos/dibujos/4.mp4" alt="" class="post-img">
+        </div>
+        <div class="post-box draws">
+            <video autoplay loop src="fotos/dibujos/5.mp4" alt="" class="post-img">
+        </div>
+        <div class="post-box draws">
+            <video autoplay loop src="fotos/dibujos/6.mp4" alt="" class="post-img">
+        </div>
+        <div class="post-box draws">
+            <video autoplay loop src="fotos/dibujos/7.mp4" alt="" class="post-img">
+        </div>
+        <div class="post-box draws">
+            <video autoplay loop src="fotos/dibujos/8.mp4" alt="" class="post-img">
+        </div>
+        
+        
+    </section>
+
+    <!--  - -  Footer  - -  -->
+
+    <div class="footer">
+    </div>
+
+    <!--  - -  JQuery  - -  -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <!--  - -  Link to JS  - -  -->
+    <script src="js/index.js"></script>
+
+    <!--  - -  External Resources  - -  -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

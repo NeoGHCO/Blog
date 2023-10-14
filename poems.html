@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoGHCO | Blog</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+    <!--  - -  normalize.css  - -  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--  - -  Link to css  - -  -->
+    <link rel="stylesheet" href="css/index.css">
+    <!--  - -  SweetAlerts  - -  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <!--  - -  Onload  - -  -->
+
+    <style>
+        .ButtonHidden {
+            display: none !important;
+        }
+        .checkeado {
+            width: 30px;
+            height: 30px;
+            color: green !important;
+        }
+        div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+            background-color: #fff;
+        }
+    </style>
+
+    <script>
+        function mostrarSweetAlert() {
+            Swal.fire({
+                title: 'Valeria, mi amor.',
+                html: 'Quiero comenzar diciéndote que eres la persona más importante en mi vida. Aunque sé que no suelo expresar mis emociones con facilidad, estoy decidido a cambiar eso por ti. Prometo esforzarme para demostrarte cada día lo que siento por ti de diversas maneras.<br><br>Estas cartas son solo el inicio de mi intento por transmitirte todo lo que llevo en mi corazón. Cada palabra que encuentres aquí es un reflejo de lo profundo que es mi amor por ti. Quiero que sepas que cada letra escrita con cariño es un intento sincero de acercarme a ti y mostrarte lo que significas para mí.<br><br>Eres la luz que ilumina mi camino, la razón por la que mi corazón late con fuerza. Cada momento a tu lado es un regalo que atesoro con gratitud infinita. Tu amor ha llenado los espacios vacíos de mi alma, y gracias a ti, he aprendido a amar de una manera que nunca imaginé.<br><br>Te amo con todo lo que soy, con cada fibra de mi ser. Mi corazón, mi alma y mi cuerpo te pertenecen por completo. Eres el centro de mi universo, la musa de mis sueños y el motor que impulsa mi vida. Gracias por llegar a mi vida y permitirme experimentar un amor tan profundo y genuino. Cada día a tu lado es una oportunidad para crecer, amar y aprender juntos. Prometo seguir esforzándome para que nunca dudes de cuánto significas para mí.<br><br>Con todo mi amor: Clark, tu escritor enamorado.',
+                confirmButtonText: '<ion-icon class="checkeado" name="checkmark-circle-outline"></ion-icon>',
+            });
+        }
+        window.addEventListener("load", function (e) {
+            Swal.fire({
+                timer: 10000,
+                timerProgressBar: true,
+                html: 'Por si algo le pasa a alguna carta <ion-icon class="theicon" name="heart-outline">',
+                showConfirmButton: false,
+            })
+        })
+    </script>
+
+    <!--  - -  Home  - -  -->
+
+    <section class="home" id="home">
+        <div class="home-text container">
+            <!--  - -  Back To Home  - -  -->
+            <h2 class="home-title">Tu escritor <span>enamorado</span></h2>
+            <span class="home-subtitle" id="splasheszone"></span>
+            <script>
+                window.addEventListener("load", function(event) {
+                    console.log("Todos los recursos terminaron de cargar!");
+
+                    var splashes = [
+                        "Hace falta que te diga que me muero por tener algo contigo?",
+                        "Hecho con amor <3",
+                        "Si mi cuerpo fuese lienzo, y mi corazon tintero, con la sangre de mis venas te escribiria un <span>te quiero</span>",
+                        "Te amo mas que a nada en este mundo corazon!",
+                        "Quisiera ser un gatito naranja para que me puedas adoptar ;-;",
+                        "Tus papis si le hecharon ganas haciendote >:3",
+                        "Quiero que seamos felices y que la gente nos tenga envidia :'D",
+                        "Quisiera que el tiempo se congelara cuando estoy contigo",
+                        "Regalame tu corazon",
+                        "Te quiero aqui, conmigo",
+                        "Hoy amanecí un poquito cursi",
+                        "Hablame, necesito atencion :'(",
+                        "El brillo de tus ojos no tiene comparacion",
+                        "Ya te dije que te amo?",
+                        "Besame, besame mucho",
+                        "no sabia que podia querer tanto a alguien, no hasta que te conoci",
+                        "Eventualmente seremos mayores y no habra problema por la edad :D",
+                        "Tengo fe en esta relacion",
+                        "Eres suficiente y mucho mas de lo que puedo pedir"
+                    ]
+
+                    document.querySelector('#splasheszone').innerHTML = splashes[Math.floor(Math.random() * splashes.length)]
+
+                });
+            </script>
+            <br>
+            <br>
+            <button onclick="mostrarSweetAlert()" class="home-subtitle swalbuton"><ion-icon class="icon" name="heart-outline"></ion-icon></button>
+        </div>
+    </section>
+
+    <!--  - -  Post Filter  - -  -->
+
+    <div class="post-filter container-postfilter" id="botones">
+    </div>
+
+    <section class="post-content post-container">
+
+        <div class="buttonzone">
+            <button id="downloadButton" class="download-button">Guardar Carta</button>
+        </div>
+
+        <h2 class="sub-heading" id="title"></h2>
+        <p class="post-text" id="content"></p>    
+
+    </section>
+
+    <!--  - -  Footer  - -  -->
+
+    <div class="footer">
+    </div>
+
+    <!--  - -  JQuery  - -  -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <!--  - -  Link to JS  - -  -->
+    <script src="js/index.js"></script>
+
+    <!--  - -  External Resources  - -  -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <script>
+        // Ruta de la carpeta a verificar (puedes modificarla según tus necesidades)
+        var carpeta = 'cartas/';
+        var fotos = 'img/';
+
+        var files = [
+            'Aquel amor',
+            'Carta al corazon',
+            'El apodo',
+            'El jardín de nuestro amor',
+            'El poder de tus caricias',
+            'El rincon de los secretos',
+            'El sueño hecho realidad',
+            'En tus brazos',
+            'Eres mi refugio',
+            'Juramento del corazon',
+            'La envidia del universo',
+            'La fuerza del deseo',
+            'La fuerza del destino',
+            'La magia de tus ojos',
+            'La música de nuestro amor',
+            'Tus labios',
+            'Un viaje eterno',
+            'Especialmente tuyo',
+        ];
+
+        var extension = '.txt';
+        var fotdot = '.png';
+    
+        // Función para generar los botones y asignar la ruta del archivo a la variable seleccionada
+        function generarBotones(files) {
+            var botonesDiv = document.getElementById('botones');
+    
+            for (var i = 0; i < files.length; i++) {
+                var rutaArchivo = carpeta + files[i] + extension;
+                
+                console.log(files[i] + ' loaded successfully!');
+
+                var boton = document.createElement('span');
+                boton.textContent = files[i]; // Contenido del botón será el nombre del archivo sin extensión
+                boton.classList.add('filter-item'); // Agregar la clase al botón
+                boton.onclick = function(ruta) {
+                    return function() {
+                        modificarVariable(ruta);
+                    };
+                }(files[i]);
+                botonesDiv.appendChild(boton);
+            }
+        }
+    
+        // Función para modificar una variable con la ruta del archivo seleccionado
+        function modificarVariable(ruta) {
+            console.log('Archivo seleccionado:', ruta);
+            // Aquí puedes hacer lo que necesites con la variable "ruta"
+            fetch('cartas/' + ruta + '.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('content').innerHTML = data;
+                document.getElementById('title').innerHTML = ruta;
+
+                // Habilitar el botón de descarga cuando se carga una carta
+                document.getElementById('downloadButton').disabled = false;
+                document.getElementById('downloadButton').classList.remove('ButtonHidden'); // Quita la clase ButtonHidden
+                document.getElementById('downloadButton').classList.remove('disabled');
+
+                // Agregar evento de clic al botón de descarga
+                document.getElementById('downloadButton').addEventListener('click', function() {
+                    descargarFoto(ruta);
+                });
+            })
+            .catch(error => {
+                console.error('Error al cargar la página:', error);
+                // Deshabilitar y ocultar el botón de descarga si ocurre un error al cargar la carta
+                document.getElementById('downloadButton').disabled = true;
+                document.getElementById('downloadButton').classList.add('disabled');
+            });
+        }
+
+        // Función para descargar la foto correspondiente a la carta
+        function descargarFoto(ruta) {
+            var fotoURL = carpeta + fotos + ruta + fotdot;
+
+            // Crear un enlace temporal para la descarga
+            var link = document.createElement('a');
+            link.href = fotoURL;
+            link.download = ruta + fotdot;
+            link.target = '_blank';
+            
+            // Simular el clic en el enlace para iniciar la descarga
+            link.click();
+        }
+
+        window.addEventListener("load", function(event) {
+            var downloadButton = document.getElementById('downloadButton');
+            downloadButton.disabled = true;
+            downloadButton.classList.add('ButtonHidden'); // Agrega la clase ButtonHidden
+        });
+
+        // Llamamos a la función para generar los botones con la lista proporcionada
+        generarBotones(files);
+    </script>
+
+</body>
+</html>
